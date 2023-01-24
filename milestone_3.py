@@ -1,7 +1,7 @@
-guess = input("enter a letter")
-x = guess.isalpha()
-while x == guess.isalpha():
-    if len(guess)==1:
-        break
+while True:
+    guess = input("enter a letter")
+    if len(guess)==1 and guess.isalpha():
+        print(guess)
     else: 
         print("Invalid letter. Please, enter a single alphabetical character.")
+        break
