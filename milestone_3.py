@@ -19,3 +19,4 @@ def ask_for_input():
 
     check_guess(guess)
 ask_for_input()
+
