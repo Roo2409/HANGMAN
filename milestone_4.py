@@ -7,7 +7,12 @@ class Hangman:
     self.word_guessed = ["_"]*len(self.word)
     self.num_letters = len(set(self.word))
     self.list_of_guesses = [ ]
- 
+
+ def check_guess(guess):
+   word = "apple"
+   guess = guess.lower()
+   if guess in word:
+     print("Good guess! {guess} is in the word.")
 word_list = ['banana','mango','apple','berry','orange'] 
 word_guessed = ['_']
 list_of_guesses = []
