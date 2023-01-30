@@ -5,6 +5,7 @@ class Hangman:
     self.num_lives = num_lives
     self.word = random.choice(self.word_list)
     self.word_guessed = ["_"]*len(self.word)
+    self.num_letters = len(set(self.word))
     
  
  
@@ -14,3 +15,5 @@ word_guessed = ['_']
 Task1 = Hangman(word_list)
 print(Task1.word)
 print(Task1.word_guessed)
+#print(Task1.word_list)
+print(Task1.num_letters)
