@@ -6,11 +6,11 @@ class Hangman:
     self.word = random.choice(self.word_list)
     self.word_guessed = ["_"]*len(self.word)
     self.num_letters = len(set(self.word))
-    self.list_of_guesses = []
-    
+    self.list_of_guesses = word_guessed
     
  
  
+
 
 word_list = ['banana','mango','apple','berry','orange'] 
 word_guessed = ['_']
@@ -20,3 +20,4 @@ print(Task1.word)
 print(Task1.word_guessed)
 #print(Task1.word_list)
 print(Task1.num_letters)
+print(Task1.list_of_guesses)
