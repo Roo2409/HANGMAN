@@ -19,18 +19,18 @@ class Hangman:
          guess = input("enter a letter")
          if len(guess)!= 1 and not guess.isalpha():
             print("Invalid letter. Please, enter a single alphabetical character.")
-            break
          elif guess in self.list_of_guesses:
             print("You already tried that letter!")
          else:
          #lif ( len(guess)==1 ) and (guess not in list_of_guesses):
           self.check_guess(guess)
+          break
           
 
 
 word_list = ['banana','mango','apple','berry','orange'] 
 word_guessed = ['_']
-list_of_guesses =  []
+list_of_guesses = []
 t1 = Hangman(word_list)
 # print(Task1.word_guessed)
 # print(Task1.word_list)
