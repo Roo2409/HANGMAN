@@ -13,11 +13,15 @@ class Hangman:
       self.list_of_guesses.append(guess)
       if guess in self.word:
          print(f"Good guess! {guess} is in the word.")
-      # for ch in self.word_guessed:
-      #    word_guessed = ' '.join(guess)
-      #    if len(guess) == 1 and self.word_guessed:
-      #       print(word_guessed)
-
+         for letter in range(len(self.word)):
+            if self.word[letter] == guess:
+               self.word_guessed[letter] = guess
+               print(self.word_guessed)           
+   
+               
+            
+            #print(enumerate(self.word_guessed))
+          
    def ask_for_input(self):
       while True:
          guess = input("enter a letter")
@@ -32,7 +36,7 @@ class Hangman:
           
 
 
-word_list = ['banana','mango','apple','berry','orange'] 
+word_list = ['banana','mango','apple','orange'] 
 word_guessed = ['_']
 list_of_guesses = []
 t1 = Hangman(word_list)
@@ -41,3 +45,4 @@ t1 = Hangman(word_list)
 # print(Task1.num_letters)
 # print(Task1.list_of_guesses)
 t1.ask_for_input()
+#t1.check_guess("a")
