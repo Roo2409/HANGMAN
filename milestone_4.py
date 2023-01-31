@@ -11,12 +11,12 @@ class Hangman:
    def check_guess(self,guess):
       self.guess = guess.lower()
       self.list_of_guesses.append(guess)
-      if guess in word_guessed:
+      if guess in self.word:
          print(f"Good guess! {guess} is in the word.")
-      for ch in self.word_guessed:
-         word_guessed = ' '.join(guess)
-         if len(guess) == 1 and self.word_guessed:
-            print(word_guessed)
+      # for ch in self.word_guessed:
+      #    word_guessed = ' '.join(guess)
+      #    if len(guess) == 1 and self.word_guessed:
+      #       print(word_guessed)
 
    def ask_for_input(self):
       while True:
@@ -27,7 +27,7 @@ class Hangman:
             print("You already tried that letter!")
          else:
          #lif ( len(guess)==1 ) and (guess not in list_of_guesses):
-          self.check_guess(guess, word_guessed)
+          self.check_guess(guess)
           break
           
 
