@@ -17,7 +17,7 @@ class Hangman:
             if self.word[letter] == guess:
                self.word_guessed[letter] = guess
                print(self.word_guessed)     
-         num_letter -=1      
+         #num_letter -=1      
    
                
             
