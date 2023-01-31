@@ -19,9 +19,9 @@ class Hangman:
          guess = input("enter a letter")
          if len(guess)!= 1 and not guess.isalpha():
             print("Invalid letter. Please, enter a single alphabetical character.")
+            break
          elif guess in self.list_of_guesses:
             print("You already tried that letter!")
-            break
          else:
          #lif ( len(guess)==1 ) and (guess not in list_of_guesses):
           self.check_guess(guess)
