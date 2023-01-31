@@ -8,7 +8,7 @@ class Hangman:
       self.num_letters = len(set(self.word))
       self.list_of_guesses = [ ]
    
-   def check_guess(self,guess, word_guessed):
+   def check_guess(self,guess):
       self.guess = guess.lower()
       self.list_of_guesses.append(guess)
       if guess in word_guessed:
