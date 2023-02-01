@@ -39,7 +39,7 @@ class Hangman:
          #lif ( len(guess)==1 ) and (guess not in list_of_guesses):
           self.check_guess(guess)
           break
-def play_game(self, word_list):
+def play_game(word_list):
       num_lives = 5
       word_list = ['banana','mango','apple','orange'] 
       word_guessed = ['_']
@@ -52,9 +52,9 @@ def play_game(self, word_list):
       while True:
          if num_lives == 0:
             print("you lost")
-         elif self.num_letters >0:
+         elif self.num_letter >0:
             return game.ask_for_input()
          else:
             print('Congratulations. You won the game!')
 
-play_game("apple","fruits")
+play_game("word")
