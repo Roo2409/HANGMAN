@@ -21,12 +21,12 @@ class Hangman:
             #Find index   
                self.word_guessed[ index ] = guess
             index += 1
-         print (f"The word list is {self.word_guessed}")
+         #print (f"The word list is {self.word_guessed}")
       else:
          self.num_lives-=1
          print(f"sorry, {guess} is not in the word")
          print(f"you have {self.num_lives} lives left")
-      self.list_of_guesses.append(guess)
+         self.list_of_guesses.append(guess)
                
    
                
