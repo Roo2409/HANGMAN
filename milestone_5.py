@@ -44,6 +44,7 @@ def play_game(word_list):
       game = Hangman(word_list, num_lives)
       print(game.word_guessed)
       print(game.word_list)
+      print(game.word)
       print(game.list_of_guesses)
       while True:
          if game.num_lives == 0:
