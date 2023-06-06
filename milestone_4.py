@@ -21,18 +21,12 @@ class Hangman:
             #Find index   
                self.word_guessed[ index ] = guess
             index += 1
-         #print (f"The word list is {self.word_guessed}")  #explained by hasan!!
+         
       else:
          self.num_lives-=1
 
          print(f"Sorry, {guess} is not in the word.")
          print(f"You have {self.num_lives} lives left.")
-   
-               
-   
-               
-            
-            #print(enumerate(self.word_guessed))
           
    def ask_for_input(self):
       while True:
@@ -58,7 +52,5 @@ t1 = Hangman(word_list)
 # print(Task1.list_of_guesses)
 t1.ask_for_input()
 #t1.check_guess("a")
-      # for letter in range(len(self.word)): #this one explained by tim
-      #       if self.word[letter] == guess:
-      #          self.word_guessed[letter] = guess
-      #          print(self.word_guessed)     
+      
+    
