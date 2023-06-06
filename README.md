@@ -3,10 +3,10 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. Therefore we created a file called milestone_2.py and  we will be implementing all the asked tasks in there. 
 
--Task1 = 
+-Milestone1= 
 we have to create a list of 5 fruits and assigned it to the "word_list" Variable.
 
--Task2=
+-Milestone2=
 In addition to Task 1, we will be using random.choice method to get the random choices from our list. Firstly import random and then assigned the word_list to the "word" Variable. Print out the possible outcome several times by using random.choicemethod.
 ``` python 
 word_list = ['banana','mango','apple','berry','orange']
@@ -17,14 +17,6 @@ word_list = ['banana','mango','apple','berry','orange']
 word = random.choice(word_list)
 print(word)
 ```
--Task3 = In this task we will be using Input method in which we will ask the user to Enter the single letter, and assign it to the "guess"Variable.
+-Milestone3 = The code has two functions: check_guess and ask_for_input check-guess function takes the guessed letter convert to lower case and check if the guessed letter is in the word. Then accordingly it prints the message for the user. ask_for_input function request for input from user check for two conditions: if input is string value and more than one character. check_for_guess function is called in ask_for_input function first that if the letter is in the word.
 
--Task4 = In addition to task 3 we will use If and Else statement. where we will reassure that, The length of the input is ==1 and it is an Alphabet.
-````python
-guess = input("enter a single letter")
-for letter in guess:
-    if len(guess)==1 and guess.isalpha():
-        print("good guess")
-    else:
-        print("Oops! That is not a valid input.")
-````
+-Milestone4 = The game hangman is asking input from users to guess the letters from the list of words. The system picks a random word from list and ask input from user. The input provided is checked against the index of the word and and store the input if guessed correctly. In total user is given 5 lives and for any wrong guess the user looses a life from the game. After 5 guesses, the user lose the game. This game helped to learn very basics of the python like creating functions and class.
